@@ -7,7 +7,6 @@ const SignIn = () => {
   const { currentUser } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(currentUser.email);
 
   const signIn = (e) => {
     e.preventDefault();
