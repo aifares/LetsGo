@@ -12,14 +12,14 @@ const dashBoardBox = () => {
     }
   return (
     <>
-    <div className="min-h-screen flex items-center justify-center bg-pink-500 space-x-20">
+    <div >
         
     {<Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}/>}
        
-        <div className="h-32 w-32 z-0">
-            <a onClick={handleOnclick}><div className=" h-full bg-black rounded-lg shadow-2xl">
+        
+            <div onClick={handleOnclick}><div className="h-full bg-black rounded-lg shadow-2xl">
                
-            </div></a>
+            </div>
            
         </div>
 

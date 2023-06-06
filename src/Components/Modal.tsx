@@ -22,12 +22,8 @@ const Modal = ({isOpenModal, setIsOpenModal}) => {
         }
       }, [isOpenModal])
 
-
-    if(!isOpenModal){
-        return null;
-    }
   return (
-    <div ref={ref} className="flex justify-center bg-white z-[1000] h-[75%] w-[75%] absolute rounded-lg shadow-lg">
+    <div ref={ref} className={isOpenModal ? "opacity-100 transition duration-1000 ease-in-out flex justify-center bg-white z-[1000] h-[75%] w-[75%] absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] rounded-lg shadow-lg" : "opacity-0"}>
     hi
     </div>
   )
